@@ -178,7 +178,7 @@ class Wav2vec2Wrapper(nn.Module):
 class Wav2vec2PretrainWrapper(nn.Module):
     def __init__(self):
         super().__init__()
-        self.wav2vec2PT = Wav2Vec2ForPreTraining.from_pretrained("facebook/wav2vec2-base", revision='2dcc7b7f9b11f0ef271067e62599a27317a03114')
+        self.wav2vec2PT = Wav2Vec2ForPreTraining.from_pretrained("facebook/wav2vec2-large-robust")
         self.wav2vec2 = self.wav2vec2PT.wav2vec2
 #        self.wav2vec2PT.freeze_feature_extractor()
 
