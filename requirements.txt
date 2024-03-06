@@ -1,0 +1,5 @@
+pytorch
+pytorch-lightning
+fairseq #(For Wav2vec)
+huggingface transformers #(For Wav2vec2)
+faiss 
