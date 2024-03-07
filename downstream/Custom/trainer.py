@@ -9,8 +9,8 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from pytorch_lightning.core.lightning import LightningModule
-import pytorch_lightning as pl
-
+#import pytorch_lightning as pl
+import lightning as pl
 from .dataloader import CustomEmoDataset
 from utils.metrics import ConfusionMetrics
 

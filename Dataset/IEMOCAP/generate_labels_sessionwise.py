@@ -4,7 +4,7 @@ import json
 import random
 from pathlib import Path
 
-print("generating labels sessionwise")
+print("generating labels sessionwise for IEMOCAP")
 Path('labels_sess').mkdir(exist_ok=True)
 with open('metalabel.json', 'r') as f:
     metalabel = json.load(f)

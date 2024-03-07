@@ -1,7 +1,10 @@
 torch
-lightning # pytorch-lightning
+matplotlib
+pytorch-lightning
 fairseq #(For Wav2vec)
 transformers #(For Wav2vec2)
 faiss
+seaborn
+tensorboardX
 librosa
 numpy 

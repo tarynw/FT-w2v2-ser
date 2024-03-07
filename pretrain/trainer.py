@@ -7,7 +7,8 @@ from torch.utils import data
 from modules.FeatureFuser import Wav2vecWrapper, Wav2vec2Wrapper, Wav2vec2PretrainWrapper
 from modules.NN import LinearHead, RNNLayer
 from utils.metrics import ConfusionMetrics
-import pytorch_lightning.core.lightning as pl
+import lightning as pl
+#from pytorch_lightning import LightningModule as pl #import pytorch_lightning.core.lightning as pl
 
 class PretrainedEmoClassifier(pl.LightningModule):
     def __init__(self, maxstep, batch_size, lr, datadir, labeldir, modelpath, labeling_method, valid_split):
